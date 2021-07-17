@@ -1,12 +1,13 @@
-import Fetch from './fetch'
-import Axios from './axios'
+import { Container } from './appStyle';
+import Axios from './Axios';
+import Fetch from './Fetch/';
 
-function App() {
+const App = ()=> {
   return (
-    <div>
+    <Container>
       <Fetch/>
       <Axios/>
-    </div>
+    </Container>
   )
 }
 
