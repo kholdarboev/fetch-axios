@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import CountryList from './CountryList'
 import { Button, Container, Img, Wrapper } from './style';
 const Fetch = (props) => {
@@ -32,7 +32,8 @@ const Fetch = (props) => {
         setIsLoading(false);
     }, []);
 
-    let content = <p>Click to see Country List</p>
+    // let content = <p>Click to see Country List</p>
+    let content = 'Click button to see list'
     if (error) {
         content = <Img src="https://cdn.mos.cms.futurecdn.net/PuXipAW3AXUzUJ4uYyxPKC-1200-80.jpg" alt="error" />;
     }
@@ -41,7 +42,7 @@ const Fetch = (props) => {
     }
 
     if (isLoading) {
-        content = <Img.Error width='200px' src="https://apps.broadway.bank/app/images/loading.gif" alt="loading" />;
+        content = <Img.Error src="https://apps.broadway.bank/app/images/loading.gif" alt="loading" />;
     }
 
 

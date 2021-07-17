@@ -5,6 +5,11 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+@media(max-width:800px){
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
 
 `
 export const Wrapper = styled.div`

@@ -2,12 +2,12 @@
 import React from 'react'
 import { Container, Title, Wrapper } from './style'
 
-const List = (props) => {
+const List = ({ data }) => {
     return (
         <Container>
-            {props.data.map(({ name, capital }, index) => {
+            {data.map(({ name, capital, id }, index) => {
                 return (
-                    <Wrapper>
+                    <Wrapper key={index}>
                         <Title style={{ width: '100px' }}>
                             {index + 1}
                         </Title>

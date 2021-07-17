@@ -6,7 +6,7 @@ const List = (props) => {
         <Container>
             {props.data.map(({ name, capital }, index) => {
                 return (
-                    <Wrapper>
+                    <Wrapper key={index}>
                         <Title style={{ width: '100px' }}>
                             {index + 1}
                         </Title>

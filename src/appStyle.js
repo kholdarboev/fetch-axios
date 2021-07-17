@@ -10,4 +10,11 @@ display: flex;
 width:100%;
 justify-content: space-between;
 align-items: flex-start;
+@media(max-width:800px){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
 `

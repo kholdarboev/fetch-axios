@@ -3,7 +3,16 @@ export const Container = styled.div`
 max-height: 80vh;
 scroll-behavior: smooth;
 overflow-y: scroll;
-
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px orange;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #444;
+  outline: 1px solid #777;
+}
 `
 
 export const Title = styled.div`
