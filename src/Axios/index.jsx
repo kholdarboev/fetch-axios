@@ -35,7 +35,7 @@ const Axios = (props) => {
     }
     return (
         <Container>
-            <Button onClick={fetchData}>Fetch Data</Button>
+            <Button onClick={fetchData}>Fetch Data with Axios</Button>
             <Wrapper>
                 {content}
             </Wrapper>

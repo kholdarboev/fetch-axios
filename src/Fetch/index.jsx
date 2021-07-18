@@ -49,7 +49,7 @@ const Fetch = (props) => {
 
     return (
         <Container>
-            <Button type='primary' onClick={getFetch}>Fetch Data</Button>
+            <Button type='primary' onClick={getFetch}>Fetch Data with Fetch</Button>
             <Wrapper>
                 {content}
             </Wrapper>
